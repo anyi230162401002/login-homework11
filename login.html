@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 我的学校系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background: url("fengjing.jpg") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .header h2 {
+            color: #2c3e50;
+            font-size: 24px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #34495e;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .link-group {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .link-group a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <div class="header">
+            <img src="xiaohui.jpg" alt="校徽">
+            <h2>用户登录</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label>学号</label>
+                <input type="text" placeholder="请输入你的学号" required>
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input type="password" placeholder="请输入密码" required>
+            </div>
+            <button type="button" class="btn">登录</button>
+        </form>
+        <div class="link-group">
+            <a href="register.html">还没有账号？去注册</a>
+        </div>
+        <div class="footer">
+            学号：230162401002 | 姓名：安怡 | © 我的学校风景展示
+        </div>
+    </div>
+</body>
+</html>
